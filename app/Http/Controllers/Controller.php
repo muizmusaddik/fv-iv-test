@@ -68,9 +68,9 @@ class Controller extends BaseController {
     $this->e = $E;
     $this->f = $F;
 
-    $S = $this->getS($A, $B, $C);
-    $R = $this->getR($A, $B, $C);
-    $T = $this->getT($A, $B, $C);
+    $S = $this->getS();
+    $R = $this->getR();
+    $T = $this->getT();
 
     if (!$S && !$R && !$T) {
       throw new \Exception('Invalid input for a, b, or c');
